@@ -1,0 +1,54 @@
+.timeline {
+  position: relative;
+  margin-left: 15px;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  padding-bottom: 30px;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+
+  left: 15px;
+  top: 32px;
+
+  width: 2px;
+  height: calc(100% - 5px);
+
+  background-color: #dee2e6;
+}
+
+.timeline-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #198754;
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  flex-shrink: 0;
+}
+
+.timeline-content {
+  padding-top: 2px;
+}
+
+.timeline-content h6 {
+  font-weight: 600;
+}

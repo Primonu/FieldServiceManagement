@@ -1,0 +1,39 @@
+.topbar {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  border-bottom: 1px solid #edf0f4;
+}
+.topbar h1 { margin: 0 0 5px; color: #192338; font-size: 25px; font-weight: 700; }
+.topbar p { margin: 0; color: #7a8290; font-size: 12px; }
+
+.top-actions { display: flex; align-items: center; gap: 12px; }
+.icon-button {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #eef0f4;
+  border-radius: 50%;
+  color: #485466;
+  background: #fff;
+  cursor: pointer;
+}
+.icon-button:hover { background: #f5f7fa; }
+.profile { display: flex; align-items: center; gap: 9px; margin-left: 8px; }
+.avatar {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(145deg, #2b8c86, #193c68);
+  font-size: 13px;
+  font-weight: 700;
+}
+.profile strong { display: block; color: #263144; font-size: 11px; }
+.profile small { display: block; margin-top: 2px; color: #9199a7; font-size: 9px; }
+.profile > i { margin-left: 2px; color: #8a93a1; font-size: 9px; }
